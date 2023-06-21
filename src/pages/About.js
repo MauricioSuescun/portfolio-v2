@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "@/components/AnimatedText";
 import Head from "next/head";
 import Image from "next/image";
@@ -36,7 +37,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Image src={profilePic} />
+            <Image src={profilePic} alt="imagen de perfil" />
           </div>
         </div>
       </main>

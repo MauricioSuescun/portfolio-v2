@@ -39,7 +39,7 @@ export default function Home() {
                 Hi,👋 My name is Yesid and I am a
               </p>
               <AnimatedText
-                text="Full Stack Web Developer."
+                text="Frontend Web Developer."
                 className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium">
@@ -61,7 +61,7 @@ export default function Home() {
                 <Link
                   href="mailto:mautorres15@hotmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark p-2.5 rounded-lg border-2 border-solid border-dark dark:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark p-2.5 rounded-lg border-2 border-solid border-dark dark:text-light dark:border-light"
                 >
                   Contact me
                 </Link>

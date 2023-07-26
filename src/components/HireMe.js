@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MotionLink = motion(Link);
 const HireMe = () => {
   return (
-    <div className="fixed bottom-[-14rem] flex items-center justify-center overflow-hidden">
+    <div className="fixed right-4 bottom-[-12rem] flex items-center justify-center overflow-hidden md:right-1 md:left-auto md:top-[-15rem] md:w-32 md:bottom-auto">
       <div className="w-48 h-auto flex items-center justify-center relative">
         <SvgComponent
           className={"fill-black animate-spin-slow dark:fill-light"}

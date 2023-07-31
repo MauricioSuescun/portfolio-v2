@@ -9,22 +9,24 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-black bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-black bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <Link
         href=""
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl  ">{type}</span>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl xs:text-base ">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
             {title}
           </h2>
         </Link>
@@ -36,7 +38,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light font-semibold p-2 px-6 text-lg dark:bg-light dark:text-dark"
+            className="ml-4 rounded-lg bg-dark text-light font-semibold p-2 px-6 text-lg dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
             Visit Project
           </Link>
@@ -55,9 +57,12 @@ const Projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="py-16">
-          <AnimatedText text="Projects" />
+          <AnimatedText
+            text="Projects"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
 
-          <div className="grid grid-cols-12 gap-24 pt-16">
+          <div className="grid grid-cols-12 gap-24 pt-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title="The Gaming Farm"

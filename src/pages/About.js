@@ -12,12 +12,15 @@ const About = () => {
         <title>Yesid Mauricio | About me</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
-        <AnimatedText text="About me!" className="mb-16"></AnimatedText>
-        <div className="grid w-full grid-cols-4 gap-16 px-32">
-          <div className="col-span-3 flex flex-col items-start justify-start ">
+      <main className="flex w-full flex-col items-center justify-center py-32">
+        <AnimatedText
+          text="About me!"
+          className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+        ></AnimatedText>
+        <div className="grid  w-full grid-cols-4 gap-16 px-32">
+          <div className="col-span-2 flex flex-col items-start justify-start xl:col-span-4 md:col-span-4 xs:px-2">
             <p className="font-medium dark:text-light">
-              Hi, I am Mauricio Suescun, a web developer and UI/UX designer with
+              Hi, I am Mauricio Torres, a web developer and UI/UX designer with
               a passion for creating beautiful, functional, and user-centered
               digital experiences. With experience in the field. I am always
               looking for new and innovative ways to bring my clients visions to
@@ -36,7 +39,7 @@ const About = () => {
               project.
             </p>
           </div>
-          <div>
+          <div className="col-span-2 flex flex-col items-start justify-start xs:col-span-4">
             <Image src={profilePic} alt="imagen de perfil" />
           </div>
         </div>

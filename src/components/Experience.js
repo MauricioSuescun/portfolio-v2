@@ -44,28 +44,28 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position="Full Stack Developer"
-            company="Henry Bootcamp"
-            companyLink="https://www.henrybootcamp.com/"
-            time="May 2021 - Present"
+            position="Full Stack Developer - "
+            company="Soy Henry Bootcamp"
+            companyLink="https://www.soyhenry.com/"
+            time="Nov 2022 - Feb 2023"
             address="Remote"
-            work="I'm a Full Stack Developer, responsible for the backend and frontend of the Henry Bootcamp website. I'm responsible for managing the backend of the website, ensuring that the backend is secure, scalable, and efficient"
+            work="We created an e-commerce platform focused on the gaming world, we wanted to apply different technologies such as React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. On my part I was more committed to the frontend part and implementing some additional features to add value to the project."
           />
           <Details
-            position="Full Stack Developer"
-            company="Henry Bootcamp"
+            position="Full-Stack Teaching Assistant - "
+            company="Teaching Assistant (TA) for students at Henry Bootcamp."
             companyLink="https://www.henrybootcamp.com/"
-            time="May 2021 - Present"
+            time="Nov 2022 - 2023"
             address="Remote"
-            work="I'm a Full Stack Developer, responsible for the backend and frontend of the Henry Bootcamp website. I'm responsible for managing the backend of the website, ensuring that the backend is secure, scalable, and efficient"
+            work="I guided learners in their initial steps in the course, clarifying any questions and doubts. I provided ongoing assistance to students in completing exercises, promoting collaborative teamwork such as pair programming. To build community among the cohort, I encouraged collaboration and team building. I also suggested ideas to improve bootcamp processes and workflows, playing an active role in enhancing the overall program. "
           />
           <Details
-            position="Full Stack Developer"
-            company="Henry Bootcamp"
-            companyLink="https://www.henrybootcamp.com/"
-            time="May 2021 - Present"
-            address="Remote"
-            work="I'm a Full Stack Developer, responsible for the backend and frontend of the Henry Bootcamp website. I'm responsible for managing the backend of the website, ensuring that the backend is secure, scalable, and efficient"
+            position="Level 2 IT Solutions Consultant - "
+            company="Lattitude SAS"
+            companyLink="https://www.lattitude.la/"
+            time="Mar 2019 - Dec 2019"
+            address="Bogota - Colombia"
+            work=" I gained valuable hands-on experience administering, implementing, and managing core on-premise and cloud infrastructure, platforms, and services to meet client requirements and deliver IT solutions. My responsibilities involved day-to-day operations as well as project deployments, giving me exposure to a wide range of enterprise technologies and environments."
           />
         </ul>
       </div>

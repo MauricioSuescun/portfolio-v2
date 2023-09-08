@@ -6,12 +6,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import farm from "../../public/images/projects/The Gaming Farm.png";
+import wanderlust from "../../public/images/projects/Wanderlust.png";
+import nft from "../../public/images/projects/nft-collection-website-cover-image.jpg";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-black bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <Link
-        href=""
+        href={link}
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
@@ -48,6 +51,47 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
+const Project = ({ title, type, img, link, github }) => {
+  return (
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl shadow-2xl border border-solid border-dark dark:border-light p-6 relative">
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full"
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-full flex flex-col mt-4 items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-l xs:text-base ">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-2xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
+        </Link>
+
+        <div className="my-2 flex items-center">
+          <Link href={github} target="_blank" className="w-10 ">
+            <GithubIcon />
+          </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light font-semibold p-2 px-6 text-lg dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+          >
+            Visit
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
 const Projects = () => {
   return (
     <>
@@ -66,17 +110,41 @@ const Projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="The Gaming Farm"
-                img={project1}
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-                page transitions, cool background effects, unique design and it is mobile responsive."
-                link="/"
+                img={farm}
+                summary="e-commerce platform focused on the gaming world, where you can find games, consoles, console controllers, and gaming-related news. The site implement different technologies like React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. "
+                link="https://the-gamig-farm-pf-rho.vercel.app/"
                 type="Featured Project"
-                github="/"
+                github="https://github.com/MauricioSuescun"
               />
             </div>
-            <div className="col-span-6 dark:text-light">Project 1</div>
-            <div className="col-span-6 dark:text-light">Project 2</div>
-            <div className="col-span-6 dark:text-light">Project 3</div>
+            <div className="col-span-6 dark:text-light">
+              {" "}
+              <Project
+                title="Wanderlust App"
+                img={wanderlust}
+                link="https://wanderlust-app-pink.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/MauricioSuescun"
+              />
+            </div>
+            <div className="col-span-6 dark:text-light">
+              <Project
+                title="Proyecto Uno"
+                img={nft}
+                link="https://the-gamig-farm-pf-rho.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/MauricioSuescun"
+              />
+            </div>
+            <div className="col-span-6 dark:text-light">
+              <Project
+                title="The Gaming Farm"
+                img={farm}
+                link="https://the-gamig-farm-pf-rho.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/MauricioSuescun"
+              />
+            </div>
           </div>
         </Layout>
       </main>

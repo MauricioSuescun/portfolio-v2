@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import figma from "../../public/images/svgs/logos/react-2.svg";
+import Image from "next/image";
 
 const Skill = ({ name, x, y }) => {
   return (
@@ -32,7 +34,8 @@ const Skills = () => {
         >
           Web
         </motion.div>
-        <Skill name="CSS" x="-20vw" y="8vw" />
+        <Skill name="CSS" x="-20vw" y="8vw"></Skill>
+
         <Skill name="Html" x="25vw" y="-18vw" />
         <Skill name="Javascript" x="20vw" y="6vw" />
         <Skill name="Figma" x="-5vw" y="-10vw" />

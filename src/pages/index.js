@@ -36,17 +36,20 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <p className="!text-left my-4 text-base font-medium mr-auto">
-                Hi,👋 My name is Yesid and I am a
+                Hi there!👋, My name is Yesid Mauricio and I am a
               </p>
               <AnimatedText
-                text="Frontend Web Developer."
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+                text="Frontend Developer."
+                className=" !text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+              <p className="mt-4 text-base font-medium">
+                As a skilled frontend developer, I am dedicated to turning ideas
+                into innovative web applications. Feel free to explore my
+                featured projects and my experience working with cutting-edge
+                technologies—all of this is in service of your next project.
+              </p>
+              <p className="!text-left text-base mb-4 font-medium mr-auto">
+                Let&apos;s come together to create something truly incredible!
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
@@ -68,7 +71,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <HireMe />
+          <div className="z-30">
+            <HireMe />
+          </div>
         </Layout>
       </main>
       <div className="pt-2">

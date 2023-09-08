@@ -92,7 +92,7 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="/"
+            href="https://twitter.com/YesidTorres"
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
@@ -101,7 +101,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/mauricio-torres-suesc%C3%BAn/"
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
@@ -110,7 +110,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://github.com/MauricioSuescun"
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
@@ -171,7 +171,7 @@ const Navbar = () => {
 
           <nav className="flex items-center justify-center flex-wrap mt-4">
             <motion.a
-              href="/"
+              href="https://twitter.com/YesidTorres"
               target={"_blank"}
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.9 }}
@@ -180,7 +180,7 @@ const Navbar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://www.linkedin.com/in/mauricio-torres-suesc%C3%BAn/"
               target={"_blank"}
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.9 }}
@@ -189,7 +189,7 @@ const Navbar = () => {
               <LinkedInIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://github.com/MauricioSuescun"
               target={"_blank"}
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.9 }}
@@ -222,7 +222,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] hidden">
+      <div className="absolute left-[50%] translate-x-[-50%]">
         <Logo />
       </div>
     </header>

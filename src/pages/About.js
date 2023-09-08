@@ -17,8 +17,8 @@ const About = () => {
           text="About me!"
           className="mb-16 lg:text-7xl sm:text-6xl xs:text-4xl sm:mb-8"
         ></AnimatedText>
-        <div className="flex items-start justify-between w-full px-32 xs:px-24">
-          <div className="w-1/2 pr-8">
+        <div className="flex items-start justify-between w-full px-32 xs:px-24 xs:flex-col sm:flex-col md:flex-col">
+          <div className="w-1/2 pr-8 xs:w-full sm:w-full md:w-full xs:pr-2">
             <p className="font-medium dark:text-light">
               I'm originally from Bogotá, Colombia. I grew up surrounded by
               technology. My passion for it led me to specialize in computer
@@ -39,7 +39,7 @@ const About = () => {
               project.
             </p>
           </div>
-          <div className="w-1/2 pl-8">
+          <div className="w-1/2 pl-8 xs:w-full sm:w-full md:w-full xs:pl-0 pt-8">
             <Image src={certificado} alt="certificado Soy Henry" />
           </div>
         </div>

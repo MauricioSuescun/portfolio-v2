@@ -8,7 +8,7 @@ import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import farm from "../../public/images/projects/The Gaming Farm.png";
 import wanderlust from "../../public/images/projects/Wanderlust.png";
-import nft from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+import fakeshop from "../../public/images/projects/fake-shop.png";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -129,17 +129,17 @@ const Projects = () => {
             </div>
             <div className="col-span-6 dark:text-light">
               <Project
-                title="Proyecto Uno"
-                img={nft}
-                link="https://the-gamig-farm-pf-rho.vercel.app/"
+                title="Fake Shop Typescript"
+                img={fakeshop}
+                link="https://fake-shop-react-typescript.vercel.app/"
                 type="Featured Project"
                 github="https://github.com/MauricioSuescun"
               />
             </div>
             <div className="col-span-6 dark:text-light">
               <Project
-                title="The Gaming Farm"
-                img={farm}
+                title="Test Tailwind"
+                img={project1}
                 link="https://the-gamig-farm-pf-rho.vercel.app/"
                 type="Featured Project"
                 github="https://github.com/MauricioSuescun"

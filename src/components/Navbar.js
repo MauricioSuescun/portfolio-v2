@@ -88,6 +88,7 @@ const Navbar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/About" title="About me" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="ml-4" />
+          <CustomLink href="/Experience" title="Experience" className="ml-4" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -146,7 +147,7 @@ const Navbar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[90vw] flex flex-col justify-between items-center fixed top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/45 rounded-lg backdrop-blur-md py-32 text-light"
+          className="min-w-[90vw] flex flex-col justify-between items-center fixed top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/45 rounded-lg backdrop-blur-md py-32 text-light"
         >
           <nav className="flex items-center flex-col justify-center">
             <MobileCustomLink
@@ -164,6 +165,12 @@ const Navbar = () => {
             <MobileCustomLink
               href="/projects"
               title="Projects"
+              className=""
+              toggle={handleClick}
+            />
+            <MobileCustomLink
+              href="/Experience"
+              title="Experience"
               className=""
               toggle={handleClick}
             />
@@ -208,7 +215,7 @@ const Navbar = () => {
             </motion.a>
 
             <button
-              className={`ml-3 flex items-center justify-center rounded-full p-1
+              className={`ml-3 xs:w-8 flex items-center justify-center rounded-full p-1
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
             >
@@ -222,7 +229,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] translate-x-[-50%]">
+      <div className="absolute left-[50%] translate-x-[-50%] xs:hidden">
         <Logo />
       </div>
     </header>

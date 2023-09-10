@@ -34,16 +34,18 @@ const Skills = () => {
         >
           Web
         </motion.div>
-        <Skill name="CSS" x="-20vw" y="8vw"></Skill>
-
+        <Skill name="CSS" x="-23vw" y="8vw"></Skill>
         <Skill name="Html" x="25vw" y="-18vw" />
         <Skill name="Javascript" x="20vw" y="6vw" />
-        <Skill name="Figma" x="-5vw" y="-10vw" />
-        <Skill name="ReactJS" x="0vw" y="15vw" />
+        <Skill name="Figma" x="-5vw" y="-12vw" />
+        <Skill name="ReactJS" x="-2vw" y="19vw" />
         <Skill name="NextJS" x="-25vw" y="-5vw" />
         <Skill name="Bootstrap" x="15vw" y="-10vw" />
-        <Skill name="Tailwind CSS" x="32vw" y="-5vw" />
+        <Skill name="Tailwind CSS" x="32vw" y="-3vw" />
         <Skill name="Redux" x="-25vw" y="-18vw" />
+        <Skill name="Node" x="2vw" y="-24vw" />
+        <Skill name="SQL" x="16vw" y="14vw" />
+        <Skill name="Github" x="-9vw" y="10vw" />
       </div>
     </div>
   );

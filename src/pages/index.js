@@ -48,14 +48,12 @@ export default function Home() {
                 featured projects and my experience working with cutting-edge
                 technologies—all of this is in service of your next project.
               </p>
-              <p className="!text-left text-base mb-4 font-medium mr-auto">
-                Let&apos;s come together to create something truly incredible!
-              </p>
+
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light border-2 border-solid border-transparent hover:text-dark hover:border-dark dark:bg-light dark:text-black hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+                  className="flex items-center bg-dark text-light p-2.5 xs:w-32 px-6 rounded-lg text-lg font-semibold hover:bg-light border-2 border-solid border-transparent hover:text-dark hover:border-dark dark:bg-light dark:text-black hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   download={true}
                 >
                   Resume

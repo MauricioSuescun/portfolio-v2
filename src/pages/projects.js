@@ -117,7 +117,7 @@ const Projects = () => {
                 github="https://github.com/MauricioSuescun"
               />
             </div>
-            <div className="col-span-6 dark:text-light">
+            <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
               {" "}
               <Project
                 title="Wanderlust App"
@@ -127,7 +127,7 @@ const Projects = () => {
                 github="https://github.com/MauricioSuescun"
               />
             </div>
-            <div className="col-span-6 dark:text-light">
+            <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
               <Project
                 title="Fake Shop Typescript"
                 img={fakeshop}
@@ -136,7 +136,7 @@ const Projects = () => {
                 github="https://github.com/MauricioSuescun"
               />
             </div>
-            <div className="col-span-6 dark:text-light">
+            <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
               <Project
                 title="Test Tailwind"
                 img={project1}

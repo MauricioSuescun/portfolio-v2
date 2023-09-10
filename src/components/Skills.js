@@ -24,7 +24,7 @@ const Skills = () => {
         Skills
       </h2>
       <div
-        className="mx-12 h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[40vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg
+        className="mx-12 h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[50vh] xs:h-[40vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg
       md:bg-circularLightMd md:dark:bg-circularDarkMd
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
       >

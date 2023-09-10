@@ -39,7 +39,7 @@ const About = () => {
               project.
             </p>
           </div>
-          <div className="w-1/2 pl-8 xs:w-full sm:w-full md:w-full xs:pl-0 pt-8">
+          <div className="w-1/2 pl-8 sm:pl-0 xs:w-full sm:w-full md:w-full xs:pl-0 pt-8">
             <Image src={certificado} alt="certificado Soy Henry" />
           </div>
         </div>

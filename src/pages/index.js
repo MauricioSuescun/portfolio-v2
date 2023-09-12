@@ -36,7 +36,7 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <p className="!text-left my-4 text-base font-medium mr-auto">
-                Hi there!👋, My name is Yesid Mauricio and I am a
+                Hi there!👋, My name is Mauricio and I am a
               </p>
               <AnimatedText
                 text="Frontend Developer."
@@ -49,11 +49,11 @@ export default function Home() {
                 technologies—all of this is in service of your next project.
               </p>
 
-              <div className="flex items-center self-start mt-2 lg:self-center">
+              <div className="flex items-center self-start mt-4 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href="/CV Yesid Mauricio Torres Suescun (en).pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 xs:w-32 px-6 rounded-lg text-lg font-semibold hover:bg-light border-2 border-solid border-transparent hover:text-dark hover:border-dark dark:bg-light dark:text-black hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+                  className="flex items-center bg-dark text-light p-2.5 xs:w-32 sm:w-32 px-6 rounded-lg text-lg font-semibold hover:bg-light border-2 border-solid border-transparent hover:text-dark hover:border-dark dark:bg-light dark:text-black hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   download={true}
                 >
                   Resume
@@ -69,10 +69,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="z-30">
-            <HireMe />
-          </div>
         </Layout>
+        <div className="z-50">
+          <HireMe />
+        </div>
       </main>
       <div className="pt-2">
         <About />

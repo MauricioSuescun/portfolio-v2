@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import IconBar from "./IconBar";
+import AnimatedText from "@/components/AnimatedText";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -34,15 +35,16 @@ const Experience = () => {
   });
   return (
     <div className="my-32">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center dark:text-light lg:text-6xl md:text-6xl xs:text-4xl md:mb-16">
-        Experience
-      </h2>
+      <AnimatedText
+        text="Experience"
+        className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+      />
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="flex flex-col items-start justify-between ml-4">
           <Details
             position="Full Stack Developer - "
             company="Soy Henry Bootcamp"

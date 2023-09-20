@@ -9,6 +9,7 @@ import project1 from "../../public/images/projects/crypto-screener-cover-image.j
 import farm from "../../public/images/projects/The Gaming Farm.png";
 import wanderlust from "../../public/images/projects/Wanderlust.png";
 import fakeshop from "../../public/images/projects/fake-shop.png";
+import personalBlog from "../../public/images/projects/personal-blog.png";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -35,7 +36,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="my-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10 dark:bg-light">
+          <Link href={github} target="_blank" className="w-10 dark:text-light">
             <GithubIcon />
           </Link>
           <Link
@@ -76,7 +77,7 @@ const Project = ({ title, type, img, link, github }) => {
         </Link>
 
         <div className="my-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10 ">
+          <Link href={github} target="_blank" className="w-10 fill-light">
             <GithubIcon />
           </Link>
           <Link
@@ -114,7 +115,17 @@ const Projects = () => {
                 summary="e-commerce platform focused on the gaming world, where you can find games, consoles, console controllers, and gaming-related news. The site implement different technologies like React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. "
                 link="https://the-gamig-farm-pf-rho.vercel.app/"
                 type="Featured Project"
-                github="https://github.com/MauricioSuescun"
+                github="https://github.com/MauricioSuescun/The-Gamig-Farm-PF"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Personal Blog"
+                img={personalBlog}
+                summary="Amazing static blog website using Next.js, Contentlayer, and Tailwind CSS. With homepage, blog pages, category pages, an about page, and a contact page, dark and light themes, fully responsive on mobile devices."
+                link="https://personal-blog-mauriciosuescun.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/MauricioSuescun/Personal-Blog"
               />
             </div>
             <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
@@ -124,7 +135,7 @@ const Projects = () => {
                 img={wanderlust}
                 link="https://wanderlust-app-pink.vercel.app/"
                 type="Featured Project"
-                github="https://github.com/MauricioSuescun"
+                github="https://github.com/MauricioSuescun/Wanderlust-App"
               />
             </div>
             <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
@@ -133,7 +144,7 @@ const Projects = () => {
                 img={fakeshop}
                 link="https://fake-shop-react-typescript.vercel.app/"
                 type="Featured Project"
-                github="https://github.com/MauricioSuescun"
+                github="https://github.com/MauricioSuescun/FakeShop-React-Typescript"
               />
             </div>
             <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12 hidden">

@@ -6,7 +6,7 @@ import Image from "next/image";
 const Skill = ({ name, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold py-3 px-6 bg-black text-light shadow-black cursor-pointer absolute dark:text-dark dark:bg-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold"
+      className="flex items-center justify-center rounded-full font-semibold py-3 px-6 bg-primary text-dark shadow-black cursor-pointer absolute dark:text-dark dark:bg-primary lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold border-2 border-solid border-dark xs:border-none"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -29,7 +29,7 @@ const Skills = () => {
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
       >
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold p-8 bg-black text-light shadow-black  dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
+          className="flex items-center justify-center rounded-full border-2 border-solid border-dark font-semibold p-8 bg-primary text-dark shadow-black  dark:text-dark dark:bg-primary lg:p-6 md:p-4 xs:text-xs xs:p-2 xs:bg-transparent"
           whileHover={{ scale: 1.05 }}
         >
           Web

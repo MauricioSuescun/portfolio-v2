@@ -13,14 +13,31 @@ import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
-  const router = useRouter();
+  const [activeSection, setActiveSection] = useState("home");
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    document.querySelector(href).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link
+      href={href}
+      className={`${className} relative group`}
+      onClick={handleClick}
+    >
       {title}
+
       <span
-        className={`h-[2px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 
-        group-hover:w-full transition-[width] ease duration-300
-        ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light`}
+        className={`
+          h-[2px] inline-block w-0 bg-primary absolute left-0 -bottom-0.5  
+          group-hover:w-full transition-[width] ease duration-300
+          ${activeSection === href ? "w-full" : "w-0"}
+          dark:bg-primary
+        `}
       >
         &nbsp;
       </span>
@@ -29,15 +46,16 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const MobileCustomLink = ({ href, title, className = "", toggle }) => {
-  const router = useRouter();
-
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     toggle();
-    router.push(href);
+    document.querySelector(href).scrollIntoView({
+      behavior: "smooth",
+    });
   };
+
   return (
     <button
-      href={href}
       className={`${className} relative group my-2`}
       onClick={handleClick}
     >
@@ -45,7 +63,7 @@ const MobileCustomLink = ({ href, title, className = "", toggle }) => {
       <span
         className={`h-[2px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 
         group-hover:w-full transition-[width] ease duration-300
-        ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light`}
+        dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -81,7 +99,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <header className="w-full px-32 pt-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full px-32 pt-2 font-medium flex items-center justify-between dark:text-light xl:px-24 z-10 lg:px-16 md:px-12 sm:px-8 dark:bg-dark bg-light">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
@@ -102,17 +120,25 @@ const Navbar = () => {
           }`}
         ></span>
       </button>
+      <div className="relative xs:hidden sm:hidden">
+        <Logo />
+      </div>
+      <div className="w-max flex justify-between items-center lg:hidden ">
+        <nav className="mr-36 xl:mr-36 md:mr-12">
+          <CustomLink href="#skills" title="Skills" className="mr-4" />
+          <CustomLink href="#about" title="About" className="mx-4" />
 
-      <div className="w-full flex justify-between items-center lg:hidden">
-        <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/About" title="About me" className="mx-4" />
-          <CustomLink href="/projects" title="Projects" className="ml-4" />
+          <CustomLink href="#skills">Skills</CustomLink>
+          <CustomLink href="#projects" title="Projects" className="mx-4 " />
+
+          <CustomLink href="#experience" title="Experience" className="mx-4 ">
+            exp
+          </CustomLink>
           <CustomLink
-            href="/experience"
-            title="Experience"
-            className="ml-4 xl:hidden"
-          />
+            href="#contact"
+            title="Contact"
+            className="ml-4"
+          ></CustomLink>
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -181,20 +207,32 @@ const Navbar = () => {
               toggle={handleClick}
             />
             <MobileCustomLink
-              href="/About"
+              href="#about"
               title="About me"
               className=""
               toggle={handleClick}
             />
             <MobileCustomLink
-              href="/projects"
+              href="#projects"
               title="Projects"
               className=""
               toggle={handleClick}
             />
             <MobileCustomLink
-              href="/experience"
+              href="#experience"
               title="Experience"
+              className=""
+              toggle={handleClick}
+            />
+            <MobileCustomLink
+              href="#skills"
+              title="Skills"
+              className=""
+              toggle={handleClick}
+            />
+            <MobileCustomLink
+              href="#contact"
+              title="Contact"
               className=""
               toggle={handleClick}
             />
@@ -252,10 +290,6 @@ const Navbar = () => {
           </nav>
         </motion.div>
       ) : null}
-
-      <div className="absolute left-[50%] translate-x-[-50%] xs:hidden">
-        <Logo />
-      </div>
     </header>
   );
 };

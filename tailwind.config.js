@@ -13,8 +13,8 @@ module.exports = {
       colors: {
         dark: "#000000",
         light: "#f5f5f5",
-        primary: "#9c0e0e", // 240,86,199
-        primaryDark: "#58E6D9", // 80,230,217
+        primary: "#ffff00", // 240,86,199
+        cool: "#ffff00", // 80,230,217
       },
       animation: {
         "spin-slow": "spin 9s linear infinite",

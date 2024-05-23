@@ -42,7 +42,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light font-semibold p-2 px-6 text-lg dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg bg-primary text-dark font-semibold p-2 px-6 text-lg dark:bg-primary dark:text-dark sm:px-4 sm:text-base border-2 border-solid border-dark"
           >
             Visit Project
           </Link>
@@ -83,7 +83,7 @@ const Project = ({ title, type, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light font-semibold p-2 px-6 text-lg dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg bg-primary text-dark font-semibold p-2 px-6 text-lg dark:bg-primary dark:text-dark sm:px-4 sm:text-base border-2 border-solid border-dark"
           >
             Visit
           </Link>

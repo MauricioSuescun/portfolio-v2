@@ -14,7 +14,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <div>
         <h3 className="capitalize font-bold text-2xl dark:text-light sm:text-xl xs:text-lg">
           {position}&nbsp;
-          <a href={companyLink} target="_blank" className="text-primary">
+          <a href={companyLink} target="_blank" className="text-[#CCCC00]">
             @{company}
           </a>
         </h3>

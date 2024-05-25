@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AnimatedText from "@/components/AnimatedText";
+
 import figma from "../../public/images/svgs/logos/react-2.svg";
 import Image from "next/image";
 
@@ -20,9 +22,13 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <div>
-      <h2 className="font-bold text-8xl mt-64 w-full text-center dark:text-light md:mt-32 md:text-6xl">
+      {/* <h2 className="font-bold text-8xl mt-64 w-full text-center dark:text-light md:mt-32 md:text-6xl">
         Skills
-      </h2>
+      </h2> */}
+      <AnimatedText
+        text="Skills"
+        className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+      />
       <div
         className="mx-12 h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[50vh] xs:h-[40vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg
       md:bg-circularLightMd md:dark:bg-circularDarkMd

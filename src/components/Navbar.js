@@ -124,16 +124,13 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className="w-max flex justify-between items-center lg:hidden ">
-        <nav className="mr-36 xl:mr-36 md:mr-12">
-          <CustomLink href="#skills" title="Skills" className="mr-4" />
+        <nav className="mr-36 xl:mr-36 md:mr-12 flex">
           <CustomLink href="#about" title="About" className="mx-4" />
-
-          <CustomLink href="#skills">Skills</CustomLink>
-          <CustomLink href="#projects" title="Projects" className="mx-4 " />
-
+          <CustomLink href="#skills" title="Skills" className="mr-4 ml-4" />
           <CustomLink href="#experience" title="Experience" className="mx-4 ">
             exp
           </CustomLink>
+          <CustomLink href="#projects" title="Projects" className="mx-4 " />
           <CustomLink
             href="#contact"
             title="Contact"
@@ -141,7 +138,7 @@ const Navbar = () => {
           ></CustomLink>
         </nav>
 
-        <nav className="flex items-center justify-center flex-wrap">
+        <nav className="flex items-center justify-center flex-wrap xl:flex-nowrap">
           <motion.a
             href="https://www.linkedin.com/in/mauricio-torres-suesc%C3%BAn/"
             target={"_blank"}

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import farm from "../../public/images/projects/The Gaming Farm.png";
+import iphone from "../../public/images/projects/iPhone Website.png";
 import wanderlust from "../../public/images/projects/Wanderlust.png";
 import fakeshop from "../../public/images/projects/fake-shop.png";
 import personalBlog from "../../public/images/projects/personal-blog.png";
@@ -118,8 +119,18 @@ const Projects = () => {
                 github="https://github.com/MauricioSuescun/The-Gamig-Farm-PF"
               />
             </div>
-            <div className="col-span-12">
-              <FeaturedProject
+            <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
+              <Project
+                title="iPhone 15 Pro Site"
+                img={iphone}
+                summary="e-commerce platform focused on the gaming world, where you can find games, consoles, console controllers, and gaming-related news. The site implement different technologies like React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. "
+                link="https://ymts-iphone15pro.vercel.app/"
+                type="Featured Project"
+                github="https://github.com/MauricioSuescun/iphone-website-clone"
+              />
+            </div>
+            <div className="col-span-6 dark:text-light sm:col-span-12 xs:col-span-12">
+              <Project
                 title="Personal Blog"
                 img={personalBlog}
                 summary="Amazing static blog website using Next.js, Contentlayer, and Tailwind CSS. With homepage, blog pages, category pages, an about page, and a contact page, dark and light themes, fully responsive on mobile devices."

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedText from "@/components/AnimatedText";
+import { useTranslation } from "next-i18next";
 
 import figma from "../../public/images/svgs/logos/react-2.svg";
 import Image from "next/image";
@@ -20,13 +21,15 @@ const Skill = ({ name, x, y }) => {
 };
 
 const Skills = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       {/* <h2 className="font-bold text-8xl mt-64 w-full text-center dark:text-light md:mt-32 md:text-6xl">
         Skills
       </h2> */}
       <AnimatedText
-        text="Skills"
+        text={t("skills")}
         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
       />
       <div

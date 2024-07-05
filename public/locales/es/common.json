@@ -1,0 +1,22 @@
+{
+  "saludo": "Hola que tal!👋, Mi nombre es Mauricio y soy un",
+  "developer": "Desarrollador Frontend",
+  "description": "Como desarrollador frontend, me dedico a convertir ideas en aplicaciones web innovadoras. Siéntase libre de explorar mi proyectos destacados y mi experiencia trabajando con tecnologías todo ello al servicio de su próximo proyecto.",
+  "about": "Acerca de",
+  "skills": "Habilidades",
+  "experience": "Experiencia",
+  "projects": "Proyectos",
+  "contact": "Contacto",
+  "contact me": "Contactame",
+  "resume": "Hoja de vida",
+  "aboutTitle": "Conoceme!",
+  "about1": "Soy originario de Bogotá, Colombia. Crecí rodeado de tecnología. Mi pasión por ella me llevó a especializarme en mantenimiento informático. Después de años en soporte técnico, decidí pivotar hacia el desarrollo web.",
+  "about2": "Me considero una persona creativa, detallista y enfocada en soluciones. Disfruto aprendiendo cosas nuevas cada día y manteniéndome al día de las tendencias en desarrollo. Creo firmemente que con creatividad, trabajo duro y trabajo en equipo, podemos lograr grandes cosas.",
+
+  "about3": "Ya sea que esté trabajando en un sitio web, una aplicación móvil u otro producto digital, aporto mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario a cada proyecto en el que trabajo. Espero tener la oportunidad de aportar mi talento y pasión a su próximo proyecto.",
+  "job1": "Creamos una plataforma de comercio electrónico enfocada al mundo del gaming, queríamos aplicar diferentes tecnologías como React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. Por mi parte me dediqué más a la parte frontend y a implementar algunas funcionalidades adicionales para aportar valor al proyecto.",
+  "job2": "Guié a los alumnos en sus pasos iniciales en el curso, aclarando cualquier pregunta o duda. Proporcioné asistencia continua a los alumnos para completar los ejercicios, fomentando el trabajo en equipo colaborativo, como la programación por parejas. Para crear comunidad entre los participantes, fomenté la colaboración y el trabajo en equipo. También sugerí ideas para mejorar los procesos y flujos de trabajo del bootcamp, desempeñando un papel activo en la mejora del programa en general. ",
+  "job3": " Obtuve una valiosa experiencia práctica administrando, implementando y gestionando infraestructuras, plataformas y servicios centrales en las instalaciones y en la nube para satisfacer los requisitos de los clientes y ofrecer soluciones de TI. Mis responsabilidades incluían operaciones cotidianas e implementaciones de proyectos, lo que me permitió conocer una amplia gama de tecnologías y entornos empresariales.",
+  "visit": "Visitalo",
+  "take a look": "Echa un vistazo"
+}

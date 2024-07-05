@@ -11,8 +11,11 @@ import iphone from "../../public/images/projects/iPhone Website.png";
 import wanderlust from "../../public/images/projects/Wanderlust.png";
 import fakeshop from "../../public/images/projects/fake-shop.png";
 import personalBlog from "../../public/images/projects/personal-blog.png";
+import { useTranslation } from "next-i18next";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  const { t } = useTranslation("common");
+
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-black bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <Link
@@ -45,7 +48,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-primary text-dark font-semibold p-2 px-6 text-lg dark:bg-primary dark:text-dark sm:px-4 sm:text-base border-2 border-solid border-dark"
           >
-            Visit Project
+            {t("take a look")}
           </Link>
         </div>
       </div>
@@ -54,6 +57,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 };
 
 const Project = ({ title, type, img, link, github }) => {
+  const { t } = useTranslation("common");
+
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl shadow-2xl border border-solid border-dark dark:border-light p-6 relative">
       <Link
@@ -86,7 +91,7 @@ const Project = ({ title, type, img, link, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-primary text-dark font-semibold p-2 px-6 text-lg dark:bg-primary dark:text-dark sm:px-4 sm:text-base border-2 border-solid border-dark"
           >
-            Visit
+            {t("visit")}
           </Link>
         </div>
       </div>
@@ -95,6 +100,8 @@ const Project = ({ title, type, img, link, github }) => {
 };
 
 const Projects = () => {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
@@ -104,7 +111,7 @@ const Projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="py-16">
           <AnimatedText
-            text="Projects"
+            text={t("projects")}
             className="mb-16 lg:!text-7xl sm:my-8 sm:!text-6xl xs:!text-4xl"
           />
 

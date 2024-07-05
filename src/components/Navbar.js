@@ -11,6 +11,8 @@ import {
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
+import { useTranslation } from "next-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -72,6 +74,7 @@ const MobileCustomLink = ({ href, title, className = "", toggle }) => {
 };
 
 const Navbar = () => {
+  const { t } = useTranslation("common");
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef(null);
@@ -125,15 +128,27 @@ const Navbar = () => {
       </div>
       <div className="w-max flex justify-between items-center lg:hidden ">
         <nav className="mr-36 xl:mr-36 md:mr-12 flex">
-          <CustomLink href="#about" title="About" className="mx-4" />
-          <CustomLink href="#skills" title="Skills" className="mr-4 ml-4" />
-          <CustomLink href="#experience" title="Experience" className="mx-4 ">
+          <CustomLink href="#about" title={t("about")} className="mx-4" />
+          <CustomLink
+            href="#skills"
+            title={t("skills")}
+            className="mr-4 ml-4"
+          />
+          <CustomLink
+            href="#experience"
+            title={t("experience")}
+            className="mx-4 "
+          >
             exp
           </CustomLink>
-          <CustomLink href="#projects" title="Projects" className="mx-4 " />
+          <CustomLink
+            href="#projects"
+            title={t("projects")}
+            className="mx-4 "
+          />
           <CustomLink
             href="#contact"
-            title="Contact"
+            title={t("contact")}
             className="ml-4"
           ></CustomLink>
         </nav>
@@ -166,15 +181,6 @@ const Navbar = () => {
           >
             <TwitterIcon />
           </motion.a>
-          <motion.a
-            href="/"
-            target={"_blank"}
-            whileHover={{ y: -4 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-8 mr-3"
-          >
-            T
-          </motion.a>
 
           <button
             className={`ml-3 flex items-center justify-center rounded-full p-1
@@ -187,6 +193,7 @@ const Navbar = () => {
               <MoonIcon className={"fill-black"} />
             )}
           </button>
+          <LanguageSwitcher />
         </nav>
       </div>
 
@@ -263,15 +270,6 @@ const Navbar = () => {
             >
               <TwitterIcon />
             </motion.a>
-            <motion.a
-              href="/"
-              target={"_blank"}
-              whileHover={{ y: -4 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-8 mr-3 sm:mx-1"
-            >
-              T
-            </motion.a>
 
             <button
               className={`ml-3 xs:w-8 flex items-center justify-center rounded-full p-1
@@ -285,6 +283,15 @@ const Navbar = () => {
               )}
             </button>
           </nav>
+          <motion.a
+            href="/"
+            target={"_blank"}
+            whileHover={{ y: -4 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-8 mr-3 sm:mx-1"
+          >
+            <LanguageSwitcher />
+          </motion.a>
         </motion.div>
       ) : null}
     </header>

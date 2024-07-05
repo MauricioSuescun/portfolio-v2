@@ -9,8 +9,8 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  // const onSubmit = (data) => console.log(data);
+  // console.log(errors);
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function ContactForm() {
           <LottieAnimation />
         </div>
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          // onSubmit={handleSubmit(onSubmit)}
           className=" text-xl font-medium leading-relaxed w-3/5 sm:w-full dark:text-light items-start justify-center px-16 "
         >
           Hello! My name is{" "}

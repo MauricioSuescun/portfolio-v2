@@ -4,13 +4,15 @@ import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { ScrollContainer } from "react-scroll";
+import { appWithTranslation } from "next-i18next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-mont",
 });
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -28,3 +30,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default appWithTranslation(App);

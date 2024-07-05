@@ -1,0 +1,21 @@
+{
+  "saludo": "Hi there!👋, My name is Mauricio and I am a",
+  "developer": "Frontend Developer",
+  "description": "As a skilled frontend developer, I am dedicated to turning ideas into innovative web applications. Feel free to explore my featured projects and my experience working with cutting-edge technologies—all of this is in service of your next project.",
+  "about": "About",
+  "skills": "Skills",
+  "experience": "Experience",
+  "projects": "Projects",
+  "contact": "Contact",
+  "contact me": "Contact Me",
+  "resume": "Resume",
+  "aboutTitle": "About Me!",
+  "about1": "I'm originally from Bogotá, Colombia. I grew up surrounded by technology. My passion for it led me to specialize in computer  maintenance. After years in tech support, I decided to pivot to web development.",
+  "about2": "I consider myself a creative, detail-oriented, and solutions-focused person. I enjoy learning new things daily and staying up-to-date on dev trends. I firmly believe that with creativity, hard work, and teamwork, we can achieve great things.",
+  "about3": "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my kills and passion to your next project.",
+  "job1": "We created an e-commerce platform focused on the gaming world, we wanted to apply different technologies such as React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. On my part I was more committed to the frontend part and implementing some additional features to add value to the project.",
+  "job2": "I guided learners in their initial steps in the course, clarifying any questions and doubts. I provided ongoing assistance to students in completing exercises, promoting collaborative teamwork such as pair programming. To build community among the cohort, I encouraged collaboration and team building. I also suggested ideas to improve bootcamp processes and workflows, playing an active role in enhancing the overall program.",
+  "job3": " I gained valuable hands-on experience administering, implementing, and managing core on-premise and cloud infrastructure, platforms, and services to meet client requirements and deliver IT solutions. My responsibilities involved day-to-day operations as well as project deployments, giving me exposure to a wide range of enterprise technologies and environments.",
+  "visit": "Visit",
+  "take a look": "Take a Look!"
+}

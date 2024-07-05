@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import IconBar from "./IconBar";
 import AnimatedText from "@/components/AnimatedText";
+import { useTranslation } from "next-i18next";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -29,6 +30,8 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Experience = () => {
   const ref = useRef(null);
+  const { t } = useTranslation("common");
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
@@ -36,7 +39,7 @@ const Experience = () => {
   return (
     <div className="my-32">
       <AnimatedText
-        text="Experience"
+        text={t("experience")}
         className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
       />
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
@@ -51,7 +54,7 @@ const Experience = () => {
             companyLink="https://www.soyhenry.com/"
             time="Nov 2022 - Feb 2023"
             address="Remote"
-            work="We created an e-commerce platform focused on the gaming world, we wanted to apply different technologies such as React, Redux, NodeJS, Bootstrap, Material-UI, Postgres, Sequelize, etc. On my part I was more committed to the frontend part and implementing some additional features to add value to the project."
+            work={t("job1")}
           />
           <Details
             position="Full-Stack Teaching Assistant - "
@@ -59,7 +62,7 @@ const Experience = () => {
             companyLink="https://www.henrybootcamp.com/"
             time="Nov 2022 - 2023"
             address="Remote"
-            work="I guided learners in their initial steps in the course, clarifying any questions and doubts. I provided ongoing assistance to students in completing exercises, promoting collaborative teamwork such as pair programming. To build community among the cohort, I encouraged collaboration and team building. I also suggested ideas to improve bootcamp processes and workflows, playing an active role in enhancing the overall program. "
+            work={t("job2")}
           />
           <Details
             position="Level 2 IT Solutions Consultant - "
@@ -67,7 +70,7 @@ const Experience = () => {
             companyLink="https://www.lattitude.la/"
             time="Mar 2019 - Dec 2019"
             address="Bogota - Colombia"
-            work=" I gained valuable hands-on experience administering, implementing, and managing core on-premise and cloud infrastructure, platforms, and services to meet client requirements and deliver IT solutions. My responsibilities involved day-to-day operations as well as project deployments, giving me exposure to a wide range of enterprise technologies and environments."
+            work={t("job3")}
           />
         </ul>
       </div>

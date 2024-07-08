@@ -183,7 +183,7 @@ const Navbar = () => {
           </motion.a>
 
           <button
-            className={`ml-3 flex items-center justify-center rounded-full p-1
+            className={`ml-3 flex items-center justify-center rounded-full p-1 mr-4
           ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
           >
